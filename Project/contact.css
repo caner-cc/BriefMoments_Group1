@@ -1,0 +1,155 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #A4C6EE;  
+}
+h1
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 60px;	
+	color:#A4C6EE;
+	padding-bottom: 20px;
+}
+.container{
+padding-bottom:25px;
+background-color: #A4C6EE;
+
+
+}
+
+.box1{  
+    background-color: #505A6B;
+    color: white;
+    text-align:center;
+    padding:10px;
+    
+}
+#form_cont{
+    width:100%;
+}
+.box123{
+  
+    margin-top:5%;
+    background-color: #A4C6EE;
+}
+.row1{
+    background-color: #A4C6EE;
+}
+.mail{
+float:left;
+margin-top:25px;
+}
+.line  {
+    border-top: 1px dashed #000; 
+    height: 18px; 
+    margin-bottom: 1%;
+    margin-top: 5%;
+   }
+.box2{
+       background-color: #A4C6EE;
+   }
+#send{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: auto;	
+    font-family: 'Roboto';   
+    border: 0px !important;
+	transition: .5s ease;
+    
+}
+#send:hover
+{
+ box-shadow:
+1px 1px #4D4F50,
+2px 2px #4D4F50,
+3px 3px #4D4F50,
+4px 4px #4D4F50,
+5px 5px #4D4F50,
+6px 6px #4D4F50;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+}
+.phone{
+    float: right;
+    margin-top: 25px;
+    
+}
+
+
+
+
+
+.navtainer
+{
+    background-color: #A4C6EE;
+    width:100%;
+}
+
+ 
+
+.topbar {
+    background-color: #A4C6EE;
+    width: 100%; 
+}
+
+ 
+
+.topnav {
+    background-color: #A4C6EE;
+    overflow: hidden;
+    width: 100%;
+    padding-right:20px;
+}
+
+ 
+
+/* Style the links inside the navigation bar */
+.topnav-right a {
+    float: left;
+    color: #3A5485;
+    text-align: center;
+    padding: 10px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+	border-bottom:solid 3px transparent;
+    
+}
+
+ 
+
+/* Change the color of links on hover */
+.topnav-right a:hover {
+    color: white;
+    border-bottom: solid 3px white;
+}
+
+ 
+
+/* Add a color to the active/current link */
+.topnav  a.active {
+    color: white;
+}
+
+ 
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+ 
+
+.logo {
+     display: flex;
+    float: left;
+}
+
+
+
+
