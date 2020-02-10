@@ -13,7 +13,7 @@ $(window).on("resize",function(){
 });
 
 $('#send').on('click', function(event){
-event.preventDefault();
+//event.preventDefault();
 let i=$(':invalid');
 if(i.length==0){
 $('#exampleModal').modal();}

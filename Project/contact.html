@@ -87,14 +87,14 @@
         <p>Or get an offer, by filling out the form below</p>
 
       </div>
-      <form method="POST" action="">
+      <form method="POST" action="create.php" enctype='multipart/form-data'>
         <div class="col-12 col-sm-12 box">
           <div class="row row1">
             <div class="col-sm-8 col-12">
               <div class="form-group row was-validated">
                 <label for="inputName" class="col-sm-2 col-12 col-form-label">Name:</label>
                 <div class="col-sm-10 col-12">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                  <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" required>
                   <div class="invalid-feedback">
                     Please provide a valid name.
                   </div>
@@ -105,7 +105,7 @@
               <div class="form-group row was-validated">
                 <label for="inputEmail" class="col-sm-2 col-12 col-form-label">Email:</label>
                 <div class="col-sm-10 col-12">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                  <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
                   <div class="invalid-feedback">
                     Please provide a valid email.
                   </div>
@@ -115,7 +115,7 @@
               <div class="form-group row was-validated">
                 <label for="inputPhone" class="col-sm-2 col-12 col-form-label">Phone:</label>
                 <div class="col-sm-10 col-12">
-                  <input type="number" class="form-control" id="inputPhone" placeholder="Phone" required>
+                  <input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="phone" required>
                   <div class="invalid-feedback">
                     Please provide a phone number.
                   </div>
@@ -125,7 +125,7 @@
               <div class="form-group row was-validated">
                 <label for="inputName" class="col-sm-2 col-12 col-form-label">Company:</label>
                 <div class="col-sm-10 col-12">
-                  <input type="text" class="form-control" id="inputCompany" placeholder="Company" required>
+                  <input type="text" class="form-control" id="inputCompany" placeholder="Company" name="comp_name"  required>
                   <div class="invalid-feedback">Please provide a company name.
                   </div>
                 </div>
@@ -134,7 +134,7 @@
               <div class="form-group row">
                 <label for="inputFile" class="col-sm-6 col-12 col-form-label">Upload Layout (if you have)</label>
                 <div class="col-sm-6 col-12">
-                  <input type="file" class="form-control-file" id="inputFile" placeholder="inputFile">
+                  <input type="file" class="form-control-file" id="inputFile" placeholder="inputFile" name="file1">
                 </div>
               </div>
               <p>What services do you need?</p>
@@ -142,19 +142,19 @@
 
               <div class="row" style="text-align:center">
                 <div class="form-check  col-sm-4 col-12">
-                  <input class="form-check-input" type="checkbox" value="" id="Check1">
+                  <input class="form-check-input" type="checkbox" value="Design" id="Check1" name="Design">
                   <label class="form-check-label" for="Check1">
                     Design
                   </label>
                 </div>
                 <div class="form-check col-sm-4 col-12">
-                  <input class="form-check-input" type="checkbox" value="" id="Check2">
+                  <input class="form-check-input" type="checkbox" value="Frontend" id="Check2" name="Frontend">
                   <label class="form-check-label" for="Check1">
                     Frontend
                   </label>
                 </div>
                 <div class="form-check col-sm-4 col-12">
-                  <input class="form-check-input" type="checkbox" value="" id="Check3">
+                  <input class="form-check-input" type="checkbox" value="Backend" id="Check3" name="Backend">
                   <label class="form-check-label" for="Check1">Backend</label>
                 </div>
               </div>
@@ -163,7 +163,7 @@
 
             <div class="col-sm-4 col-12">
               <p>Write briefly about your ideas, company etc.:</p>
-              <textarea id="tarea" rows="12" cols=""></textarea>
+              <textarea id="tarea" rows="12" cols="" name="letter"></textarea>
               <input type="submit" value="Send" class="btn btn-primary" id="send">
             </div>
           </div>
