@@ -25,7 +25,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav-right a {
     float: left;
-    pasition: relative;
+    position: relative;
     color: #3A5485;
     text-align: center;
     padding: 10px 20px 15px 20px;
@@ -115,7 +115,7 @@ body {
     background-color: #505A6B;
     padding-top: 40px;
     padding-bottom:60px;
-    widtht:100%;
+    width:100%;
     
 }
 
