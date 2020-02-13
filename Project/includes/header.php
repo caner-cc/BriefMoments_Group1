@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
@@ -11,10 +12,25 @@
         <link rel="stylesheet" 
 
               href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="about.css">
+        <!-- <link rel="stylesheet" href="css/index.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <?php
+        $scriptname = basename($_SERVER["PHP_SELF"]);
+        if($scriptname == "about.php") { ?>
+            <style>
+            <?php include 'css/about.css'; ?>
+            </style>
+        <?php } else if ($scriptname == "index.php") {?>
+            <style>
+            <?php include 'css/index.css'; ?>
+            </style>
+        <?php } else if ($scriptname == "contact.php") { ?>
+            <style>
+            <?php include 'css/contact.css'; ?>
+            </style>
+        <?php }
+        ?>
     </head>
-    <!--navbar-->
-    <body>
+<body>

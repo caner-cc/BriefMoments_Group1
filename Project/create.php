@@ -1,4 +1,4 @@
-<?php include 'db.php' ;
+<?php include 'includes/db.php' ;
 
 $name= htmlentities($_POST['name']);
 $email=$_POST['email'];

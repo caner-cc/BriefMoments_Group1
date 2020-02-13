@@ -1,6 +1,6 @@
 <?php
 //create new user 
-include 'db.php';
+include 'includes/db.php';
 if (isset($_POST["login"])&&isset($_POST["password"])) {
 	$login=htmlentities($_POST["login"]);
     $password=htmlentities($_POST["password"]);

@@ -1,6 +1,6 @@
 <?php
 //Table
-include 'db.php'; 
+include 'includes/db.php'; 
 $sql = "select * from test_t";
 $result = $conn->query($sql);
 if($result ->num_rows > 0) {
