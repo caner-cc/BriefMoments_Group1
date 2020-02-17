@@ -11,9 +11,9 @@ include 'includes/menu.php';?>
 		</div>
 		
 		<div class="col-sm-4 buttons">		
-		<a href="contact.html"><button type="button" class="btn btn-primary butt">Get an offer</button></a>
+		<a href="contact.php"><button type="button" class="btn btn-primary butt">Get an offer</button></a>
 		<div class="row">
-		<a href="about.html"><button type="button" class="btn btn-primary butt butt2">More about us</button></a>
+		<a href="about.php"><button type="button" class="btn btn-primary butt butt2">More about us</button></a>
 		</div>
 		</div>
 	</div>
@@ -34,7 +34,7 @@ include 'includes/menu.php';?>
 	</ul></div>
 	
 	
-	<a href="about.html"><button type="button" class="btn btn-primary dbtn">More</button></a>
+	<a href="about.php"><button type="button" class="btn btn-primary dbtn">More</button></a>
 	
 	</div>
 	
@@ -49,7 +49,7 @@ include 'includes/menu.php';?>
 	<li>Ipsum velit id tortor</li>	
 	</ul></div>
 	
-	<a href="about.html"><button type="button" class="btn btn-primary">More</button></a>
+	<a href="about.php"><button type="button" class="btn btn-primary">More</button></a>
 	
 	</div>
 	
@@ -64,7 +64,7 @@ include 'includes/menu.php';?>
   <li>Quisque tempus dui vitae</li>
 	</ul></div>
 	
-	<a href="about.html"><button type="button" class="btn btn-primary">More</button></a>
+	<a href="about.php"><button type="button" class="btn btn-primary">More</button></a>
 	</div>
 	</div>
 	</div>
@@ -77,7 +77,7 @@ include 'includes/menu.php';?>
 	<div class="blackt">
 	<p>In dapibus, leo viverra vestibulum egestas, orci quam tincidunt lacus, at imperdiet ipsum velit id tortor. Nullam ac velit vel ante bibendum aliquam nec laoreet lorem. Quisque tempus dui vitae urna pulvinar, at scelerisque diam accumsan In dapibus, leo viverra vestibulum egestas, orci quam tincidunt lacus, at imperdiet ipsum velit id tortor.</p>
 	</div>
-	<a href="contact.html"><button type="button" class="btn btn-primary">Get an offer</button></a>	
+	<a href="contact.php"><button type="button" class="btn btn-primary">Get an offer</button></a>	
 	</div>
 	<div class="col-sm-4">
 	<img src="img/bluepuzzle.png" alt="puzzle">
