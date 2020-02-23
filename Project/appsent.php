@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
+<link rel="stylesheet" href="css/appsent.css">
+<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,23 +10,7 @@
         <!-- <link rel="stylesheet" href="css/index.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <?php
-        $scriptname = basename($_SERVER["PHP_SELF"]);
-        if($scriptname == "about.php") { ?>
-            <style>
-            <?php include 'css/about.css'; ?>
-            </style>
-        <?php } else if ($scriptname == "index.php") {?>
-            <style>
-            <?php include 'css/index.css'; ?>
-            </style>
-        <?php } else if ($scriptname == "contact.php") { ?>
-            <style>
-            <?php include 'css/contact.css'; ?>
-            </style>
-        <?php }
-        ?>
-        <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+<?php include "includes/menu.php" ?>
 <script>
     //dropdown menu
      $(document).ready(function(){
@@ -37,8 +18,28 @@
     });
 
 </script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-<body>
+<div class="con">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="msg">Your application has been successfully sent!</p>
+                <?php header('Refresh: 6; "about.php"'); 
+                ?> 
+                <p id="countdown" class="countdown"></p>
+                <script>
+                    var timeleft = 5;
+                    var downloadTimer = setInterval(function(){
+                        if(timeleft <= 0){
+                        clearInterval(downloadTimer);
+                        } else {
+                        document.getElementById("countdown").innerHTML = timeleft + " seconds remaining until redirect to the previous page";
+                        }
+                        timeleft -= 1;
+                        }, 1000);
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<?php include "includes/footer.php" ?>

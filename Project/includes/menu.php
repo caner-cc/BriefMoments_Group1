@@ -20,12 +20,25 @@
       </li>     
       <li class="nav-item">
         <a href="contact.php">Contact</a>
-	  </li>	 
-	  <li class="nav-item">
+	    </li>	 
+	    <li class="nav-item">
         <a href="enter.html">Enter</a>
-      </li> 
+      </li>
     </ul>
-	</div>
+  </div>
+    
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Join us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item white" href="enter.html">Enter</a>
+
+          <a class="dropdown-item white" href="#">Register</a>
+ 
+          <a class="dropdown-item white" href="">Send application</a>
+        </div>
+</div>
     </div>
   </div>
   </div>

@@ -182,7 +182,23 @@ transition: .5s ease;
      display: flex;
     float: left;
     	
-}.containercontainer
+}
+
+.dropdown-menu {
+    background-color: #505A6B !important;
+}
+
+.white {
+    color: #A4C6EE !important;
+}
+
+.dropdown-item:hover {
+    background-color: #505A6B !important;
+    color: white !important;
+    border-bottom:solid 3px transparent !important;
+}
+
+.containercontainer
 {
 	background-color: white;
 	width:100%;
@@ -286,5 +302,20 @@ padding-left: 25px;
 	}
 }
 
+@media only screen and (max-width: 510px) {
+	.logo {
+		width: 50%;
+		height: auto;
+		display: flex;
+	}
+}
+	  
+@media only screen and (max-width: 400px) {
+	.logo {
+			width: 100%;
+			height: auto;
+			display: flex;
+	}
+}
 
 

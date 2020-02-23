@@ -39,19 +39,26 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="thirdpart">
-                        <div class="thirdpartbox">
+                        <div class="thirdpartbox img">
                             <img src="img/designer.jpg" alt="Designer" class="responsive">
                         </div>
                     </div>
                 </div>
 
-
                 <div class="col-lg-4 mb-4">
                     <div class="thirdpart">
                         <div class="thirdpartbox">
                             <div class="box4">
+                                <div>
                                 <p><strong class="greeting">Hi,</strong>
-                                    <br>I'm Eszter. I'm resposible for...</p>
+                                    <br>I'm Eszter. I'm resposible for...Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <div class="icons">
+                                <a href=# ><img class="i" src="img/f.png"></a>
+                                <a href=# ><img class="i" src="img/g.png"></a>
+                                <a href=# ><img class="i" src="img/in.png"></a>
+                                <a href=# ><img class="i" src="img/t.png"></a>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,7 +87,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="thirdpart">
-                        <div class="thirdpartbox">
+                        <div class="thirdpartbox img">
                             <img src="img/frontend.png" alt="Designer" class="responsive">
                         </div>
                     </div>
@@ -91,8 +98,16 @@
                     <div class="thirdpart">
                         <div class="thirdpartbox">
                             <div class="box4">
+                                <div>
                                 <p><strong class="greeting">Welcome here,</strong>
-                                    <br>I'm Caner. I'm resposible for...</p>
+                                    <br>I'm Caner. I'm resposible for... Excepteur sint cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="icons">
+                                <a href=# ><img class="i" src="img/f.png"></a>
+                                <a href=# ><img class="i" src="img/g.png"></a>
+                                <a href=# ><img class="i" src="img/in.png"></a>
+                                <a href=# ><img class="i" src="img/t.png"></a>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -122,7 +137,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="thirdpart">
-                        <div class="thirdpartbox">
+                        <div class="thirdpartbox img">
                             <img src="img/backend.png" alt="Designer" class="responsive">
                         </div>
                     </div>
@@ -133,8 +148,16 @@
                     <div class="thirdpart">
                         <div class="thirdpartbox">
                             <div class="box4">
+                                <div>
                                 <p><strong class="greeting">Hey,</strong>
-                                    <br>I'm Alex. I'm resposible for...</p>
+                                    <br>I'm Alex. I'm resposible for...Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="icons">
+                                <a href=# ><img class="i" src="img/f.png"></a>
+                                <a href=# ><img class="i" src="img/g.png"></a>
+                                <a href=# ><img class="i" src="img/in.png"></a>
+                                <a href=# ><img class="i" src="img/t.png"></a>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -143,15 +166,17 @@
             </div>
         </div>
     </div>
+</div>
     <!-- rectangle buttons for slides -->
-
     <div class="box2">
+<div class="container">
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+</div>
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -171,6 +196,7 @@
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
             var b = document.getElementsByClassName("B");
+            
             if (n > slides.length) {
                 slideIndex = 1
             }
@@ -186,6 +212,7 @@
             for (i = 0; i < b.length; i++) {
                 b[i].className = b[i].className.replace(" Bactive", "");
             }
+           
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
             b[slideIndex - 1].className += " Bactive";
@@ -252,4 +279,77 @@
             document.body.appendChild(css);
         };
     </script>
-    <?php include 'includes/footer.php' ?>
+<div class="emp">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <h1>Get to know our brilliant employees!</h1>
+            </div>
+        </div>
+        <?php include 'includes/about_database/about_table.php' ?>
+        <?php for($i = 0; $i<count($firstnames); $i++) { ?>
+        <div class="box5">
+        <div class="row">
+        <div class="col-sm-6">
+            <div class="empbox"><?php echo '<img src="'.$imgsources[$i].'">'; ?></div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <p class="e"><?php echo "<b>$firstnames[$i]". " " ."$lastnames[$i]</b>"."<br>";
+                 echo $departments[$i];?></p>
+                 <div class="icons">
+                                <a href=# ><img class="i m" src="img/f.png"></a>
+                                <a href=# ><img class="i m" src="img/g.png"></a>
+                                <a href=# ><img class="i m" src="img/in.png"></a>
+                                <a href=# ><img class="i m" src="img/t.png"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    <?php }
+    ?>
+    </div>
+</div>
+<div class="join">
+<div class="container">
+<div class="row">
+    <div class="col-sm-12">
+        <h1 style="text-align: center">Join us!</h1>
+        </div>
+        </div>
+    <div class="row">
+    <div class="col-sm-12">
+        <form class="form" enctype="multipart/form-data" method="post" action='includes/about_database/applicants_create.php'>
+            <div>
+                <input class="form-control" type="text" name="first_name" placeholder="First Name"> <br>
+   
+                <input class="form-control" type="text" name="last_name" placeholder="Last Name"> <br>
+         
+                <input class="form-control" type="text" name="age" placeholder="Age"> <br>
+        
+                <input class="form-control" type="text" name="city" placeholder="City"> <br>
+            <div class="form-group">
+                <label>Which department are you interested in?</label>
+                    <select name="department" class="form-control form-control-sm">
+                        <option value="Designer"> Designer </option>
+                        <option value="Front-end"> Front-end </option>
+                        <option value="Back-end"> Back-end </option>
+                    </select>
+            </div>
+
+            <label for="inputFile">Please, upload a picture from yourself</label>
+                <div class="col-sm-6 col-12">
+                  <input type="file" name="file">
+                </div>
+            
+            <input type="submit" name="submit" value="Send" class="btn save btn-primary mb-2">
+            
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+        </div>
+<?php include 'includes/footer.php' ?>
+        

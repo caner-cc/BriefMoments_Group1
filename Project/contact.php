@@ -1,42 +1,39 @@
 <?php include 'includes/header.php';?>
 <?php include 'includes/menu.php'; ?>
     <!--<div class="row">First block starts-->
-      <div class="container">
-      <div class="myborder">
+<div class="container">
+  <div class="myborder">
       <div class="col-12 box1">
         <p><h1>Thanks for visiting us!</h1></p>
         <p>If you have questions, don't hesitate to contact us!</p>
       </div>
-      <div class="col-12 box1">
-        <div>
-          <p>You can reach us by</p>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-4">
+    <div class="col-12 box1">
+      <div>
+        <p>You can reach us by</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-4">
             <p class="phone">Phone +36605123456</p>
             <!--<img src="phonepicto.png" alt="phone">-->
             <i class="fa fa-phone fa-5x" aria-hidden="true"></i>
-          </div>
-          <div class="col-12 col-sm-4">
-
-          </div>
-          <div class="col-12 col-sm-4">
+        </div>
+        <div class="col-12 col-sm-4">
+        </div>
+        <div class="col-12 col-sm-4">
             <p class="mail">email ouremail@gmail.com</p>
             <!--<img src="emailpicto.png" alt="email">-->
             <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-          </div>
         </div>
       </div>
-</div>
-
     </div>
-    <!--First bloack end-->
+  </div>
+</div>
+    <!--First block end-->
     <div class="navtainer">
     <div class="container">
     <div class="col-12 col-sm-12" id="form_cont">
       <div class="col-12 box123">
         <p>Or get an offer, by filling out the form below</p>
-
       </div>
       <form method="POST" action="create.php" enctype='multipart/form-data'>
         <div class="col-12 col-sm-12 box">
@@ -50,7 +47,6 @@
                     Please provide a valid name.
                   </div>
                 </div>
-
               </div>
 
               <div class="form-group row was-validated">
@@ -118,7 +114,8 @@
               <input type="submit" value="Send" class="btn btn-primary" id="send">
             </div>
           </div>
-        </form>  </div>
+        </form>  
+      </div>
     
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -140,5 +137,5 @@
       </div>
     </div>
   </div>
-    </div>
+</div>
 <?php include 'includes/footer.php';?>
