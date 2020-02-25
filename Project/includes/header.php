@@ -29,7 +29,6 @@
             </style>
         <?php }
         ?>
-        <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
 <script>
     //dropdown menu
      $(document).ready(function(){

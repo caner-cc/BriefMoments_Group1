@@ -11,10 +11,7 @@ for($i=0; $i<count($imgsources); $i++) {
 echo '<img src="'.$imgsources[$i].'">';
 }
 */
-$sql = "select * from applicants where accepted = TRUE";
-$imgsources = array(
-
-);
+$images = array();
 
 if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
@@ -23,7 +20,8 @@ if($result ->num_rows > 0) {
     <?php $firstnames[] = $row["first_name"];
     $lastnames[] = $row["last_name"];
     $departments[] = $row["department"];
-    $imgsources[] = $row["file_name"];
+    $images[] = $row['img_src'];
 }
 }
+
 ?>

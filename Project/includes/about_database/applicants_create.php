@@ -19,10 +19,7 @@ if(isset($_POST['submit']) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         for ($i = 0; $i < 1000; $i++) {
             # Attempt to generate a unique filename
-            $fileName = md5(rand() .
-                        substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 30) . rand()) .
-                        "." .
-                        $fileExtension[0];
+            $fileName = md5(rand() . substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 30) . rand()) . "." . $fileExtension[0];
         
             # We don't have to keep trying if this file does not exist
             $targetFilePath = $targetDir . $fileName; 

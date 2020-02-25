@@ -283,44 +283,44 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-            <h1>Get to know our brilliant employees!</h1>
+                <h1>Get to know our brilliant employees!</h1>
             </div>
         </div>
-        <?php include 'includes/about_database/about_table.php' ?>
-        <?php for($i = 0; $i<count($firstnames); $i++) { ?>
-        <div class="box5">
+            <?php include 'includes/about_database/about_table.php' ?>
+            <?php for($i = 0; $i<count($firstnames); $i++) { ?>
         <div class="row">
-        <div class="col-sm-6">
-            <div class="empbox"><?php echo '<img src="'.$imgsources[$i].'">'; ?></div>
-        </div>
-        <div class="col-sm-6">
-            <div>
-                <p class="e"><?php echo "<b>$firstnames[$i]". " " ."$lastnames[$i]</b>"."<br>";
-                 echo $departments[$i];?></p>
-                 <div class="icons">
+            <div class="box5">
+                <div class="inbox5">
+                    <div class="empbox-l">
+                        <div class="img-b">
+                            <?php echo '<img src="includes/about_database/applicants_images/'.$images[$i].'">';?>
+                        </div>
+                    </div>
+                    <div class="empbox-r">
+                        <p class="e"><?php echo "<b>$firstnames[$i]". " " ."$lastnames[$i]</b>"."<br>"."$departments[$i]";?></p>
+                            <div class="icons">
                                 <a href=# ><img class="i m" src="img/f.png"></a>
                                 <a href=# ><img class="i m" src="img/g.png"></a>
                                 <a href=# ><img class="i m" src="img/in.png"></a>
                                 <a href=# ><img class="i m" src="img/t.png"></a>
+                            </div>
+                    </div>        
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
-    <?php }
-    ?>
+        </div> 
+        <?php } ?>
     </div>
 </div>
 <div class="join">
-<div class="container">
-<div class="row">
-    <div class="col-sm-12">
-        <h1 style="text-align: center">Join us!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <h1 style="text-align: center">Join us!</h1>
+            </div>
         </div>
-        </div>
-    <div class="row">
-    <div class="col-sm-12">
-        <form class="form" enctype="multipart/form-data" method="post" action='includes/about_database/applicants_create.php'>
+        <div class="row">
+            
+            <form class="form" enctype="multipart/form-data" method="post" action='includes/about_database/applicants_create.php'>
             <div>
                 <input class="form-control" type="text" name="first_name" placeholder="First Name"> <br>
    
@@ -344,12 +344,11 @@
                 </div>
             
             <input type="submit" name="submit" value="Send" class="btn save btn-primary mb-2">
-            
             </div>
-        </form>
-    </div>
+            </form>
+            
+        </div>
     </div>
 </div>
-        </div>
 <?php include 'includes/footer.php' ?>
         
