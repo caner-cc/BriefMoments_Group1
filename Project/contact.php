@@ -62,7 +62,7 @@
               <div class="form-group row was-validated">
                 <label for="inputPhone" class="col-sm-2 col-12 col-form-label">Phone:</label>
                 <div class="col-sm-10 col-12">
-                  <input type="number" class="form-control" id="inputPhone" placeholder="Phone" name="phone" required>
+                  <input type="tel" class="form-control" id="inputPhone" placeholder="Phone" name="phone" required>
                   <div class="invalid-feedback">
                     Please provide a phone number.
                   </div>

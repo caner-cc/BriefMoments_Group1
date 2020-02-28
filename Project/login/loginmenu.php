@@ -3,7 +3,7 @@
 	<div class="topbar">
 	<div class="row">
 		<div class="col-sm-12">		
-		<a href="index.php"><img class="logo" src="img/bmlogo.png" alt="Logo"></a>
+		<a href="index.php"><img class="logo" src="../img/bmlogo.png" alt="Logo"></a>
 		<div class="topnav-right">
 		<nav class="navbar navbar-expand-lg navbar-light">  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
         <a href="contact.php">Contact</a>
 	    </li>	 
 	    <li class="nav-item">
-        <a href="login/login.php">Log In</a>
+        <a href="login.php">Log In</a>
       </li>
     </ul>
   </div>
