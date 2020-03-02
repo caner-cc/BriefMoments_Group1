@@ -2,14 +2,13 @@
 include 'includes/header.php';
 include 'includes/menu.php';
 
-$first = $_POST['first_name'];
-$last = $_POST['last_name'];
+$user = $_POST['username'];
 $e = $_POST['email'];
 $p = $_POST['password'];
 $pw = md5($p);
 
-$sql = "insert into users1 (email, password, first_name, last_name, date)
-values ('$e', '$pw', '$first', '$last', now())";
+$sql = "insert into customers (username, email, password, date)
+values ('$user', '$e', '$pw', now())";
 
 if ($conn->query($sql) === TRUE){ ?>
     <div class="container">

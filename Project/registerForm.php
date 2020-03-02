@@ -13,10 +13,7 @@ include 'includes/menu.php';?>
 <form name="form1" method="post" action="createC.php" onsubmit="return validate(this)">
 <div class="form-row">
 <div class="col">
-First Name:<br> <input type="text" name="first_name" class="form-control"><br>
-</div>
-<div class="col">
-Last Name:<br> <input type="text" name="last_name" class="form-control"><br>
+Username:<br> <input type="text" name="username" class="form-control"><br>
 </div>
 </div>
 <div>

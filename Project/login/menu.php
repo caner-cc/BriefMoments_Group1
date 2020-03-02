@@ -13,21 +13,33 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-       <a href="">Browse Developers</a>
+       <a href="../index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a href="">User Settings</a>
+        <a href="../about.php">About</a>
       </li>     
       <li class="nav-item">
-        <a href="">Help</a>
+        <a href="../contact.php">Contact</a>
+	    </li>	 
+	    <li class="nav-item">
+        <a href="login.php">Log In</a>
       </li>
-      <li class="nav-item">
-        <a href="../index.php?logout='1'">Log out</a>
-      </li>
-	</div>
+    </ul>
+  </div>
+    
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Join us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item white" href="registerForm.php">Register</a>
+          <a class="dropdown-item white" href="enter.html">(admin)</a>
+        </div>
+</div>
     </div>
   </div>
   </div>
   </div>
-  </div> <!-- end of container -->
-</div> <!-- end of navtainer -->
+  </div>
+  </div>
+</nav>

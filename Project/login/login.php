@@ -1,29 +1,25 @@
-<?php include 'loginheader.php';
-include 'loginmenu.php';
-include('server.php'); ?>
-
+<?php include 'server.php';
+include 'loginheader.php';
+include 'menu.php';
+?>
 <div class="container">
-<h3>Log In</h3>
-<div class="row">
-  <div class="col-lg-6">
-    <form class="form-vertical" name="form" method="post" action="login.php">
-    <?php include('errors.php'); ?>
-      <div class="form-group">
-        <label for="email" class="control-label">Email</label>
-        <input type="text" name="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="password" class="control-label">Password</label>
-        <input type="password" name="password" class="form-control" id="password">
-      </div>
-      <div class="form-group">
-  		  <button type="submit" class="btn" name="login_user">Login</button>
-  	  </div>
-    </form>
-  </div>
+<h2>Login</h2>
+  <form method="post" action="login.php">
+	  <?php include 'errors.php'; ?>
+  	<div class="input-group">
+  		<label>Email</label><br>
+  		<input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label> <br>
+  		<input type="password" name="password">
+  	</div>
+  	<div class="input-group">
+  		<button type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		Not yet a member? <a href="../registerForm.php">Sign up</a>
+  	</p>
+  </form>
 </div>
-  <p>
-  	Not yet a member? <a href="registerForm.php">Sign up</a>
-  </p>
-</div>
-<?php include 'loginfooter.php'?>
+<?php include 'loginfooter.php';?>
