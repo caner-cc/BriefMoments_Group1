@@ -24,19 +24,12 @@
 	    <li class="nav-item">
         <a href="login.php">Log In</a>
       </li>
+      <li class="nav-item">
+        <a href="../registerForm.php">Register</a>
+      </li>
     </ul>
   </div>
-    
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Join us
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item white" href="registerForm.php">Register</a>
-          <a class="dropdown-item white" href="enter.html">(admin)</a>
-        </div>
-</div>
-    </div>
+  </div>
   </div>
   </div>
   </div>
