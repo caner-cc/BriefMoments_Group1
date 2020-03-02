@@ -7,7 +7,7 @@ include 'menu.php';
   <form method="post" action="login.php">
 	  <?php include 'errors.php'; ?>
   	<div class="input-group">
-  		<label>Email</label><br>
+  		<label>Username</label><br>
   		<input type="text" name="username" >
   	</div>
   	<div class="input-group">
