@@ -4,22 +4,19 @@ include 'menu.php';
 ?>
 <div class="container">
 <h2>Login</h2>
-  <form method="post" action="login.php">
-	  <?php include 'errors.php'; ?>
-  	<div class="input-group">
-  		<label>Username</label><br>
-  		<input type="text" name="username" >
-  	</div>
-  	<div class="input-group">
-  		<label>Password</label> <br>
-  		<input type="password" name="password">
-  	</div>
-  	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
-  	</div>
+	<div class="form-row">
+		<div class="col-6-sm">
+			Username:<br> <input type="text" name="username" class="form-control">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-6-sm">
+			Password:<br> <input type="password" name="password" class="form-control"><br>
+		</div>
+	</div>
+	<button type="submit" class="btn" name="login_user">Login</button>
   	<p>
   		Not yet a member? <a href="../registerForm.php">Sign up</a>
   	</p>
-  </form>
 </div>
 <?php include 'loginfooter.php';?>
