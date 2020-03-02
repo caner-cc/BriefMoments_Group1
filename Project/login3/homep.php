@@ -1,4 +1,5 @@
-<?php include 'loginheader.php';
+<?php 
+include 'loginheader.php';
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -11,6 +12,7 @@
   	header("location: login.php");
   }
 ?>
+<!DOCTYPE html>
 <div class="navtainer">
 <div class="container">
 	<div class="topbar">
@@ -35,7 +37,7 @@
         <a href="">Help</a>
       </li>
       <li class="nav-item">
-        <a href="logout.php">Log out</a>
+        <a href="../index.php?logout='1'">Log out</a>
       </li>
 	</div>
     </div>
@@ -44,7 +46,8 @@
   </div>
   </div> <!-- end of container -->
 </div> <!-- end of navtainer -->
-<?php if (isset($_SESSION['success'])) : ?>
+  	<!-- notification message -->
+  	<?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
           <?php 
@@ -53,10 +56,16 @@
           ?>
       	</h3>
       </div>
-    <?php endif ?>
-    
+  	<?php endif ?>
+
+    <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<h3>Welcome<?php echo $_SESSION['username']; ?></h3>
-    	<p> <a href="dashboard.php?logout='1'" style="color: red;">logout</a> </p>
+    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    	<p> <a href="../index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
+</div>
+
 <?php include 'loginfooter.php'; ?>
+		
+</body>
+</html>
