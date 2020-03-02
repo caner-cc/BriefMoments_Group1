@@ -1,6 +1,8 @@
 <?php
+include 'header.php';
 //create new user 
-include 'includes/db.php';
+
+include '../includes/db.php';
 if (isset($_POST["login"])&&isset($_POST["password"])) {
 	$login=htmlentities($_POST["login"]);
     $password=htmlentities($_POST["password"]);
@@ -12,34 +14,22 @@ if (isset($_POST["login"])&&isset($_POST["password"])) {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.input{
-width:400px;
-}
-div{margin:20px;
-}
-input{
-float:right;
-}
-</style>
-</head>
-<body style="background:#41e122">
-<div style="background:#AFEEEE">
-<h3>Create user</h3>
+<div class="container">
+<h2>Create user</h2>
 <form method="POST">
 <div class="input">
-<label>Enter login</label><input type="text" name="login" size="30"/></div>
+<label>Enter login</label><br><input type="text" name="login" size="30"/></div>
 <div class="input">
-<label>Enter password</label><input type="password" name="password" size="30"/>
+<label>Enter password</label><br><input type="password" name="password" size="30"/>
 </div>
-<button id="btn">Done</button>
+<br>
+<button id="btn" class="btn btn-primary">Done</button>
 </form>
+<p></p>
+<a href="index.php"><button type="button" class="btn btn-primary">Back</button></a>
+</div>
+
+
 <div>
 
 </div>
@@ -47,6 +37,5 @@ float:right;
 </div>
 </div>
 
-</body>
-
-</html>
+<br>
+<?php include '../includes/footer.php'; ?>

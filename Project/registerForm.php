@@ -28,7 +28,7 @@ Password:<br> <input type="password" name="password" class="form-control"><br>
 <br>
 <button type="submit" class="btn btn-primary">Register Now</button>
 <p>
-    Already a member? <a href="login/login.php">Log in</a>
+    Already a member? <a href="login3/login.php">Log in</a>
 </p>
 </form>
 </div>

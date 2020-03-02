@@ -32,8 +32,7 @@
           Join us
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item white" href="registerForm.php">Register</a>
-          <a class="dropdown-item white" href="enter.html">(admin)</a>
+          <a class="dropdown-item white" href="registerForm.php">Register</a>          
         </div>
 </div>
     </div>

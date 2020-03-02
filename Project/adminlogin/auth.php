@@ -1,6 +1,8 @@
 <?php
 //authorization  + function
-include 'db.php';
+include 'header.php';
+include '../includes/db.php';
+
 if (isset($_POST["login"])&&isset($_POST["password"])) {
 	$login=htmlentities($_POST["login"]);
     $password=htmlentities($_POST["password"]);
@@ -14,7 +16,7 @@ else{
         if( $password==$row['password']){
 
         $role=$row['role'];
-        echo "Hello".$role;
+        echo "Hello "."<strong>".$role."</strong>";
         create_data($role, $conn);}
         else{
             echo "Wrong data entered!";
@@ -81,10 +83,13 @@ else
     echo "no results";
 }
 if($role=="admin"){
-    echo "<a href=\"createuser.php\">Create user</a>";
+    echo "<a href=\"createuser.php\">Create user </a>";
 }
 
 }
-
 
 ?>
+<?php include '../includes/footer.php';?>
+
+
+
