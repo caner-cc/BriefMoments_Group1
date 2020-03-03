@@ -22,17 +22,20 @@
 {
 	margin-left: 15px;
 }
+
 .textpad
 {
 	padding-top: 20px;
 	
 }
+
 body
 {
   background-image: url("img/puzzle.jpg");
   background-size: 1900px 1080px;
   
 }
+
 .whitet
 {
 	font-family: Roboto;
@@ -136,10 +139,16 @@ transform: translateX(-3px);
 transition: .5s ease;
 }
 
+.navtainer
+{
+    display:flex;
+    background-color: #A4C6EE;
+    width:100%;
+}
+
 .topbar {
-      background-color: #A4C6EE;
+    background-color: #A4C6EE;
     width: 100%; 
-	
 }
 
 .topnav {
@@ -147,43 +156,51 @@ transition: .5s ease;
     overflow: hidden;
     width: 100%;
     padding-right:20px;
-	
-	
 }
 
+/* Style the links inside the navigation bar */
 .topnav-right a {
     float: left;
+    position: relative;
     color: #3A5485;
     text-align: center;
-    padding: 10px 20px 15px 20px;
+    padding:10px 20px 20px 20px;
     text-decoration: none;
     font-size: 15px;
-	border-bottom:solid 3px transparent;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    
+    border-bottom:solid 3px transparent;
+    margin-bottom: -8px;
+
 }
 
+/* Change the color of links on hover */
 .topnav-right a:hover {
     color: white;
     border-bottom: solid 3px white;
 }
 
-.topnav a.active {
-    color: white;
+/* Add a color to the active/current link */
+.topnav-right a.active {
+    color: white !important;
 }
 
+/* Right-aligned section inside the top navigation */
 .topnav-right {
     float: right;
 }
-
-.logo {
-	
-     display: flex;
-    float: left;
-    	
+.topnav #myLinks {
+  display: none;
 }
-
+.topnav-right a.icon {
+  display: block;
+    float: left;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+    width: 110%;
+    height:auto;
+}
 .dropdown-menu {
     background-color: #505A6B !important;
 }
@@ -196,6 +213,18 @@ transition: .5s ease;
     background-color: #505A6B !important;
     color: white !important;
     border-bottom:solid 3px transparent !important;
+}
+
+.logo {
+    display: flex;
+	float: left;
+	height: 100%;
+}
+
+img {
+    height: auto;
+    width: auto;
+    padding-top: 5px;
 }
 
 .containercontainer
@@ -213,12 +242,9 @@ transition: .5s ease;
 	background-color: #505A6B;
 	padding-top: 40px;
 	padding-bottom: 40px;
-}.navtainer
-{
-	background-color: #A4C6EE;
-	width:100%;
 }
-ul
+
+.u
 {
 line-height:200%;
 padding-left: 25px;
@@ -233,6 +259,7 @@ padding-left: 25px;
 		
 	}		
 }
+
 @media (min-width:576px) and (max-width: 767px)
 {
 	h3
@@ -318,4 +345,10 @@ padding-left: 25px;
 	}
 }
 
+@media only screen and (max-width: 770px) {
+    img {
+        width: 100%;
+        height: auto;
 
+    }
+}

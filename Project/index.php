@@ -26,7 +26,7 @@ include 'includes/menu.php';?>
 	<h3>I need help with</h3>
 	<h4>DESIGN</h4>
 	<div class="whitet">
-	<ul>
+	<ul class="u">
 	<li>Quisque tempus dui vitae</li>
 	<li>Leo viverra vestibulum</li>  
 	<li>Ipsum velit id tortor</li>
@@ -42,7 +42,7 @@ include 'includes/menu.php';?>
 	<h3>I need help with</h3>
 	<h4>FRONT-END</h4>
 	<div class="whitet">
-	<ul>
+	<ul class="u">
 	<li>Quisque tempus dui vitae</li>
 	<li>Leo viverra vestibulum</li> 	
 	<li>Orci quam tincidunt lacus</li>
@@ -57,7 +57,7 @@ include 'includes/menu.php';?>
 	<h3>I need help with</h3>
 	<h4>BACK-END</h4>
 	<div class="whitet">
-	<ul>
+	<ul class="u">
   <li>Leo viverra vestibulum</li>
   <li>Orci quam tincidunt lacus</li>
   <li>Ipsum velit id tortor</li>

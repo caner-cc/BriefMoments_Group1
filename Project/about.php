@@ -322,13 +322,13 @@
             
             <form class="form" enctype="multipart/form-data" method="post" action='includes/about_database/applicants_create.php'>
             <div>
-                <input class="form-control" type="text" name="first_name" placeholder="First Name"> <br>
+                <input class="form-control" type="text" name="first_name" placeholder="First Name" required> <br>
    
-                <input class="form-control" type="text" name="last_name" placeholder="Last Name"> <br>
+                <input class="form-control" type="text" name="last_name" placeholder="Last Name" required> <br>
          
-                <input class="form-control" type="text" name="age" placeholder="Age"> <br>
+                <input class="form-control" type="number" name="age" placeholder="Age" required> <br>
         
-                <input class="form-control" type="text" name="city" placeholder="City"> <br>
+                <input class="form-control" type="text" name="city" placeholder="City" required> <br>
             <div class="form-group">
                 <label>Which department are you interested in?</label>
                     <select name="department" class="form-control form-control-sm">
@@ -340,7 +340,7 @@
 
             <label for="inputFile">Please, upload a picture from yourself</label>
                 <div class="col-sm-6 col-12">
-                  <input type="file" name="file">
+                  <input type="file" name="file" required>
                 </div>
             
             <input type="submit" name="submit" value="Send" class="btn save btn-primary mb-2">
