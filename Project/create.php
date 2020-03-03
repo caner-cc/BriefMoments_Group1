@@ -48,7 +48,7 @@ $sql="insert into test_t (name,email,company, phone, letter, file_name, service,
 $result=$conn->query($sql);
 if($result){echo "Data added!"."<br>";}
 else{echo "Error!".$conn->error."<br>";}
-echo "<a class=\"btn btn-secondary\" href=\"contact.html\">Going back</a>";
+echo "<a class=\"btn btn-secondary\" href=\"contact.php\">Going back</a>";
 
 
 

@@ -13,34 +13,7 @@
         <!-- <link rel="stylesheet" href="css/index.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <?php
-        $scriptname = basename($_SERVER["PHP_SELF"]);
-        if($scriptname == "about.php") { ?>
-            <style>
-            <?php include 'css/about.css'; ?>
-            </style>
-        <?php } else if ($scriptname == "index.php") {?>
-            <style>
-            <?php include 'css/index.css'; ?>
-            </style>
-        <?php } else if ($scriptname == "contact.php") { ?>
-            <style>
-            <?php include 'css/contact.css'; ?>
-            </style>
-        <?php } else { ?>
-            <style>
-            <?php include 'css/index.css'; ?>
-            </style>
-        <?php }
-        ?>
-<script>
-    //dropdown menu
-     $(document).ready(function(){
-        $('.dropdown-toggle').dropdown()
-    });
-
-</script>
-
+        <link rel = "stylesheet" type = "text/css" href = "index.css"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>

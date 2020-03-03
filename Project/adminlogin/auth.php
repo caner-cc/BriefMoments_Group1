@@ -14,7 +14,7 @@ else{
         if( $password==$row['password']){
 
         $role=$row['role'];
-        echo "Hello".$role;
+        echo "Hello "."<strong>".$role."</strong>";
         create_data($role, $conn);}
         else{
             echo "Wrong data entered!";
@@ -81,10 +81,13 @@ else
     echo "no results";
 }
 if($role=="admin"){
-    echo "<a href=\"createuser.php\">Create user</a>";
+    echo "<a href=\"createuser.php\">Create user </a>";
 }
 
 }
-
 
 ?>
+<?php include '../includes/footer.php';?>
+
+
+

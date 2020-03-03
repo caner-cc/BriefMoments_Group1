@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+.homepagepicture
+{
+	position: relative;
+	right: 15px;
+	
+}
+
+.buttons
+{
+	margin-top: 80px;
+	margin-bottom: 10px;
+	padding: 50px 100px;
+	
+}
+.butt
+{
+	width: 200px;
+}
+.butt2
+{
+	margin-left: 15px;
+}
+.textpad
+{
+	padding-top: 20px;
+	
+}
+body
+{
+  background-image: url("../img/puzzle.jpg");
+  background-size: 1900px 1080px;
+  
+}
+.whitet
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:300;
+	font-size: 24px;
+	line-height:30px;
+	color:#FFFFFF;
+}
+
+.whitet1
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:300;
+	font-size: 24px;
+	line-height:30px;
+	color:#FFFFFF;
+	padding-bottom: 50px;
+}
+.blackt
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:300;
+	font-size: 24px;
+	line-height:30px;
+	color:#505A6B;
+}
+
+h1
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 60px;	
+	color:#A4C6EE;
+	padding-bottom: 20px;
+}
+h3
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:200;
+	font-size: 36px;
+	line-height: 15px;
+	color:#A4C6EE;
+	padding-top:20px;
+}
+h4
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 36px;	
+	color:#A4C6EE;
+}
+h5
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight:normal;
+	font-size: 36px;
+	line-height: 30px;
+	color:#505A6B;
+	padding-top: 20px;
+	
+}
+
+button
+{
+	transition: .5s ease;
+	
+}
+.btnpad
+{
+	padding-right:30px;
+}
+.btn {
+    top: 30%;
+    font-size:20px;
+    font-family: 'Roboto';
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    background-color: #A4C6EE !important;
+    border: 0px !important;
+    text-align: center;
+}
+button:hover
+{
+ box-shadow:
+1px 1px #4D4F50,
+2px 2px #4D4F50,
+3px 3px #4D4F50,
+4px 4px #4D4F50,
+5px 5px #4D4F50,
+6px 6px #4D4F50;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+}
+
+.topbar {
+      background-color: #A4C6EE;
+    width: 100%; 
+	
+}
+
+.topnav {
+    background-color: #A4C6EE;
+    overflow: hidden;
+    width: 100%;
+    padding-right:20px;
+	
+	
+}
+
+.topnav-right a {
+    float: left;
+    color: #3A5485;
+    text-align: center;
+    padding: 10px 20px 15px 20px;
+    text-decoration: none;
+    font-size: 15px;
+	border-bottom:solid 3px transparent;
+	font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    
+}
+
+.topnav-right a:hover {
+    color: white;
+    border-bottom: solid 3px white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.logo {
+	
+     display: flex;
+    float: left;
+    	
+}
+
+.dropdown-menu {
+    background-color: #505A6B !important;
+}
+
+.white {
+    color: #A4C6EE !important;
+}
+
+.dropdown-item:hover {
+    background-color: #505A6B !important;
+    color: white !important;
+    border-bottom:solid 3px transparent !important;
+}
+
+.containercontainer
+{
+	background-color: white;
+	width:100%;
+	padding: 10px 15px;
+	
+}.containercontainer1
+{
+	background: rgba(80, 90, 107, 0.8);
+	margin-top: 350px;
+}.containercontainer2
+{
+	background-color: #505A6B;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}.navtainer
+{
+	background-color: #A4C6EE;
+	width:100%;
+}
+ul
+{
+line-height:200%;
+padding-left: 25px;
+}
+
+
+@media (min-width: 767px) and (max-width: 995px)
+{
+	h3
+	{
+		line-height:50px;
+		
+	}		
+}
+@media (min-width:576px) and (max-width: 767px)
+{
+	h3
+	{
+		line-height:50px;
+	}	
+	
+	.whitet1
+	{
+	padding-bottom: 0px;
+	}
+	.dbtn
+	{
+		margin-top:43px;
+	}
+	.buttons
+	{
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px;
+	}
+	.butt
+	{
+	
+	margin-top: 460px;
+	margin-bottom: 0px;
+	
+	}
+	.butt2
+	{
+		padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	}
+}
+@media (min-width:0px) and (max-width:576px)
+{
+	.whitet1
+	{
+	padding-bottom: 0px;
+	}
+	.buttons
+	{
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px;
+	margin-left: 18px;
+	}
+	.butt
+	{
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	
+	}
+	.butt2
+	{
+	padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	
+	
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	.logo {
+		width: 50%;
+		height: auto;
+		display: flex;
+	}
+}
+	  
+@media only screen and (max-width: 400px) {
+	.logo {
+			width: 100%;
+			height: auto;
+			display: flex;
+	}
+}
+
+
