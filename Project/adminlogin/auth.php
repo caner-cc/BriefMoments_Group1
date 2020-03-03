@@ -1,6 +1,8 @@
 <?php
 //authorization  + function
-include 'includes/db.php';
+include 'header.php';
+include '../includes/db.php';
+
 if (isset($_POST["login"])&&isset($_POST["password"])) {
 	$login=htmlentities($_POST["login"]);
     $password=htmlentities($_POST["password"]);
@@ -24,17 +26,45 @@ else{
 }
 
 }
-if (isset($_POST["id"])) {
-$id=$_POST["id"];
-$sql="delete from test_t where id='$id'";
-$result = $conn->query($sql);
-if($result){echo "String is deleted";}
-else{
-    echo "cant delete";
-}
-create_data('admin', $conn);
-
-}
+if (isset($_POST["id"])&&isset($_POST["del"])) {
+    $id=$_POST["id"];
+    $sql="delete from test_t where id='$id'";
+    $result = $conn->query($sql);
+    if($result){echo "String is deleted";}
+    else{
+        echo "cant delete";
+    }
+    create_data('admin', $conn);
+    
+    }
+    if (isset($_POST["id"])&&isset($_POST["ed"])) {
+        $id=$_POST["id"];
+        $name=$_POST["name"];
+        $email=$_POST["email"];
+        $company=$_POST["company"];
+        $phone=$_POST["phone"];
+        $letter=$_POST["letter"];
+        $file_name=$_POST["file_name"];
+        $service=$_POST["service"];
+    
+    
+        $sql="update test_t set
+        name='$name',
+        email='$email',
+        company='$company',
+        phone='$phone',
+        letter='$letter',
+        file_name='$file_name',
+        service='$service'
+        where id='$id'";
+        $result = $conn->query($sql);
+        if($result){echo "String is edite";}
+        else{
+            echo "cant edite";
+        }
+        create_data('admin', $conn);
+        
+        }
 
 
 
@@ -64,8 +94,8 @@ echo "<table border=\"1\"><tr><th>ID</th><th>Name</th><th>email</th>
             <td><input type=\"text\" name=\"letter\" value=". $row["letter"]."></td>
             <td><input type=\"text\" name=\"file_name\" value=". $row["file_name"]."></td>
             <td><input type=\"text\" name=\"service\" value=". $row["service"]."></td>
-            <td><input type=\"submit\" value=\"edit\"></td>
-            <td><input type=\"submit\" value=\"delete\"></td>
+            <td><input type=\"submit\" name=\"ed\" value=\"edit\"></td>
+            <td><input type=\"submit\" name=\"del\" value=\"delete\"></td>
             </form></tr>";
             echo $str;
           

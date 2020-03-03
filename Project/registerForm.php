@@ -36,14 +36,10 @@ function validate() {
 
     var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
-    if (document.form1.first_name.value == "") {
-        alert( "Please provide your first name!" );
-        document.form1.first_name.focus() ;
-        return false;
-    }
-    if (document.form1.last_name.value == "") {
-        alert( "Please provide your last name!" );
-        document.form1.last_name.focus() ;
+  
+    if (document.form1.username.value == "") {
+        alert( "Please provide a username!" );
+        document.form1.username.focus() ;
         return false;
     }
     if (document.form1.email.value == /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form1.email.value))
