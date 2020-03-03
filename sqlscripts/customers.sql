@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2020 at 11:37 AM
+-- Generation Time: Mar 03, 2020 at 10:48 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -32,15 +32,17 @@ CREATE TABLE `customers` (
   `id` int(11) NOT NULL,
   `username` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(100) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`id`, `username`, `email`, `password`) VALUES
-(1, 'j', 'sarah@sarah.com', '363b122c528f54df4a0446b6bab05515');
+INSERT INTO `customers` (`id`, `username`, `email`, `password`, `date`) VALUES
+(1, 'j', 'sarah@sarah.com', '363b122c528f54df4a0446b6bab05515', '2020-03-02 19:13:50'),
+(168, 'a', 'a@a.a', '0cc175b9c0f1b6a831c399e269772661', '2020-03-02 19:16:28');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
