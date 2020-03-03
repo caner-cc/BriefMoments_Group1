@@ -5,19 +5,33 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $comp_name=$_POST['comp_name'];
 $letter=null;
+
+//for order number
+
+$d = date('is');
+$rand = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 6);
+
 if(isset($_POST['letter'])){
 $letter=$_POST['letter'];
 }
+
+$s="";
 $service="";
 if(isset($_POST['Design'])){
     $service=$service.$_POST['Design'];
+    $s = $s.'D';
 }
 if(isset($_POST['Frontend'])){
     $service=$service.$_POST['Frontend'];
+    $s = $s.'F';
 }
 if(isset($_POST['Backend'])){
     $service=$service.$_POST['Backend'];
+    $s = $s.'B';
 }
+
+$ordernum = $d . $s . '-' . $rand;
+
 /*$name = $_FILES['file1']['name'];
 echo($_FILES['file1']['type']);
 echo($_FILES['file1']['size']);*/
@@ -30,7 +44,7 @@ if($_FILES && $_FILES['file1']['error']== UPLOAD_ERR_OK){
 
 }
 
-$sql="insert into test_t (name,email,company, phone, letter, file_name, service) values ('$name','$email','$comp_name','$phone','$letter','$filename','$service')";
+$sql="insert into test_t (name,email,company, phone, letter, file_name, service, ordernum) values ('$name','$email','$comp_name','$phone','$letter','$filename','$service', '$ordernum')";
 $result=$conn->query($sql);
 if($result){echo "Data added!"."<br>";}
 else{echo "Error!".$conn->error."<br>";}
@@ -55,5 +69,6 @@ else
     echo "ERROR: " .$sql. "<br>" . $conn->error;
 }
 $conn->close();*/
+
 
 ?>
