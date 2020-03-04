@@ -34,14 +34,14 @@ if(mysqli_num_rows($query) > 0) {
 .w {
     width: 60%;
 }
-    h1
+h1
 {
 	color:#505A6B;
 }
 </style>
 
 <div class="container" id="registerform">
-<h2 class="display-4">Register as a new user</h2>
+<h1 class="display-4">Register as a new user</h1>
 <form name="form1" method="post" action="registerForm.php" onsubmit="return validate(this)">
 <div class="form-row">
 <div class="col">
