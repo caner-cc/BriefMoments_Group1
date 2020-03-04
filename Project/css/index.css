@@ -11,16 +11,13 @@
 {
 	margin-top: 80px;
 	margin-bottom: 10px;
-	padding: 50px 100px;
-	
+	display: flex;
+	flex-direction: column;
 }
 .butt
 {
+	margin-bottom: 20px;
 	width: 200px;
-}
-.butt2
-{
-	margin-left: 15px;
 }
 
 .textpad
@@ -34,6 +31,12 @@ body
   background-image: url("img/puzzle.jpg");
   background-size: 1900px 1080px;
   
+}
+
+img.puzz {
+	width: 100%;
+	height: auto;
+	display: flex;
 }
 
 .whitet
@@ -71,7 +74,7 @@ h1
 	font-family: Roboto;
 	font-style: normal;
 	font-weight:bold;
-	font-size: 60px;	
+	font-size: 40px;	
 	color:#A4C6EE;
 	padding-bottom: 20px;
 }
@@ -217,8 +220,10 @@ transition: .5s ease;
 
 .logo {
     display: flex;
-	float: left;
-	height: 100%;
+    float: left;
+    padding-top: 5px;
+    max-width: 350px;
+    height: auto;
 }
 
 img {
@@ -285,7 +290,7 @@ padding-left: 25px;
 	.butt
 	{
 	
-	margin-top: 460px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	
 	}
@@ -297,53 +302,21 @@ padding-left: 25px;
 	
 	}
 }
-@media (min-width:0px) and (max-width:576px)
-{
-	.whitet1
-	{
-	padding-bottom: 0px;
-	}
-	.buttons
-	{
-	padding-bottom: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px 0px;
-	margin-left: 18px;
-	}
-	.butt
-	{
-	
-	margin-top: 0px;
-	margin-bottom: 0px;
-	
-	
-	}
-	.butt2
-	{
-	padding-bottom: 5px;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	
-	
-	}
-}
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 805px) {
 	.logo {
 		width: 50%;
 		height: auto;
 		display: flex;
+	  }
 	}
-}
-	  
-@media only screen and (max-width: 400px) {
-	.logo {
+	  @media only screen and (max-width: 400px) {
+		.logo {
 			width: 100%;
 			height: auto;
 			display: flex;
-	}
-}
+		  }
+		}
 
 @media only screen and (max-width: 770px) {
     img {
@@ -351,4 +324,40 @@ padding-left: 25px;
         height: auto;
 
     }
+}
+
+@media only screen and (max-width: 960px) {
+	.buttbox {
+		display: flex;
+		flex-direction: column;
+	}
+	.buttons {
+		display: flex !important;
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.buttons {
+		margin-top: -10px;
+		margin-left: -100px;
+		padding-bottom: 40px;
+	}
+}
+
+
+@media only screen and (max-width: 770px) {
+	.buttons {
+		margin-top: -10px;
+		margin-left: -90px;
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.buttons {
+		margin-top: -10px;
+		margin-left: -100px;
+		padding-bottom: 40px;
+	}
 }

@@ -1,16 +1,32 @@
-<?php
-include 'includes/header.php';
-include 'includes/menu.php';?>
 
+<?php 
+include 'includes/header.php';
+include 'includes/menu.php';
+?>
+
+    
 <style>
-    #registerform {
+        #registerform {
         padding: 2rem !important; 
     }
+    @font-face { font-family: 'Roboto'; src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'); }
+    .bottom {
+	position:absolute;
+	bottom: 0%;
+	width: 100%;
+}
+.w {
+    width: 60%;
+}
+    h1
+{
+	color:#505A6B;
+}
 </style>
 
 <div class="container" id="registerform">
-<h2 class="display-4">Register as a new user</h2>
-<form name="form1" method="post" action="createC.php" onsubmit="return validate(this)">
+<h1 class="display-4">Register as a new user</h1>
+<form class="w" name="form1" method="post" action="createC.php" onsubmit="return validate(this)">
 <div class="form-row">
 <div class="col">
 Username:<br> <input type="text" name="username" class="form-control"><br>
@@ -80,5 +96,7 @@ return false;
 }
 
 </script>
+<div class="bottom">
 <?php
 include 'includes/footer.php';?>
+</div>

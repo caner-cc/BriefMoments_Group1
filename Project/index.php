@@ -3,18 +3,21 @@ include 'includes/menu.php';?>
 	
 	<div class="containercontainer1">
 	<div class="container">
-	<div class="row">
-		<div class="col-sm-8 textpad">		
+	<div class="row buttbox">
+		<div class="col-lg-8 col-sm-12 textpad">		
 		<h1>Are you missing a piece?</h1>
 		<div class="whitet1">
 		<p>In dapibus, leo viverra vestibulum egestas, orci quam tincidunt lacus, at imperdiet ipsum velit id tortor. Nullam ac velit vel ante bibendum aliquam nec laoreet lorem. Quisque tempus dui vitae urna pulvinar, at scelerisque diam accumsan. Vivamus sagittis commodo nulla vel fermentum.</p></div>
 		</div>
-		
-		<div class="col-sm-4 buttons">		
+		<div class="col-lg-4 col-sm-12 buttons">
+		<div style="margin-left: 120px;">	
+		<div class="row">	
 		<a href="contact.php"><button type="button" class="btn btn-primary butt">Get an offer</button></a>
+</div>
 		<div class="row">
-		<a href="about.php"><button type="button" class="btn btn-primary butt butt2">More about us</button></a>
+		<a href="about.php"><button type="button" class="btn btn-primary butt">More about us</button></a>
 		</div>
+</div>
 		</div>
 	</div>
 	</div>
@@ -80,7 +83,7 @@ include 'includes/menu.php';?>
 	<a href="contact.php"><button type="button" class="btn btn-primary">Get an offer</button></a>	
 	</div>
 	<div class="col-sm-4">
-	<img src="img/bluepuzzle.png" alt="puzzle">
+	<img class="puzz" src="img/bluepuzzle.png" alt="puzzle">
 	</div>
 	</div>	
 	</div>
