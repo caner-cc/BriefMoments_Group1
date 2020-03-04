@@ -3,7 +3,9 @@ include 'loginheader.php';
 include 'menu.php';
 ?>
 <div class="container">
-<h2>Login</h2>
+	<form method="post" action="login.php">
+	<?php include 'errors.php'; ?>
+	<h2>Login</h2>
 	<div class="form-row">
 		<div class="col-6-sm">
 			Username:<br> <input type="text" name="username" class="form-control">
