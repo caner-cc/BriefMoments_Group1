@@ -1,7 +1,25 @@
 <?php
 include 'includes/header.php';
-include 'includes/menu.php';?>
+include 'includes/menu.php';
+include 'includes/db.php';
 
+if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])){
+  $user = $_POST['username'];
+  $e = $_POST['email'];
+  $pw = $_POST['password'];
+
+  $query = mysqli_query($conn, "SELECT * FROM customers where username='$user'");
+if(mysqli_num_rows($query) > 0) {
+    echo 'Username already exists!';
+} else {
+    mysqli_query($conn, "insert into customers (username, email, password, date)
+    values ('$user', '$e', '".md5($pw)."', now())");?>
+    <script>
+        window.location.replace("login/login.php");
+    </script>
+<?php
+}
+}?>
 <style>
     #registerform {
         padding: 2rem !important; 
@@ -10,7 +28,7 @@ include 'includes/menu.php';?>
 
 <div class="container" id="registerform">
 <h2 class="display-4">Register as a new user</h2>
-<form name="form1" method="post" action="createC.php" onsubmit="return validate(this)">
+<form name="form1" method="post" action="registerForm.php" onsubmit="return validate(this)">
 <div class="form-row">
 <div class="col">
 Username:<br> <input type="text" name="username" class="form-control"><br>
@@ -25,7 +43,7 @@ Password:<br> <input type="password" name="password" class="form-control"><br>
 <br>
 <button type="submit" class="btn btn-primary">Register Now</button>
 <p>
-    Already a member? <a href="login3/login.php">Log in</a>
+    Already a member? <a href="login/login.php">Log in</a>
 </p>
 </form>
 </div>
