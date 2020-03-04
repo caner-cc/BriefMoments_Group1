@@ -32,7 +32,7 @@
                                     <span class="wrap"></span>
                                 </a>
                             </div>
-                            <a href="contact.html"><button type="button" class="btn btn-primary">Get an offer</button></a>
+                            <a href="contact.php"><button type="button" class="btn btn-primary">Get an offer</button></a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                     <span class="wrap"></span>
                                 </a>
                             </div>
-                            <button type="button" class="btn btn-primary">Get an offer</button>
+                            <a href="contact.php"><button type="button" class="btn btn-primary">Get an offer</button></a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                                     <span class="wrap"></span>
                                 </a>
                             </div>
-                            <button type="button" class="btn btn-primary">Get an offer</button>
+                            <a href="contact.php"><button type="button" class="btn btn-primary">Get an offer</button></a>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
                   <input type="file" name="file" required>
                 </div>
             
-            <input type="submit" name="submit" value="Send" class="btn save btn-primary mb-2">
+            <input type="submit" name="submit" value="Send" class="btn i save btn-primary mb-2">
             </div>
             </form>
             

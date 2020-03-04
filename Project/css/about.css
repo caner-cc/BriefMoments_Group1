@@ -230,6 +230,7 @@ h2, .typewrite {
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative !important;
+    width: 20% !important;
 }
 .join {
     padding-top: 40px;
