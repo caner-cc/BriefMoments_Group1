@@ -42,7 +42,7 @@ h1
 
 <div class="container" id="registerform">
 <h1 class="display-4">Register as a new user</h1>
-<form name="form1" method="post" action="registerForm.php" onsubmit="return validate(this)">
+<form name="form1"style="width: 60%" method="post" action="registerForm.php" onsubmit="return validate(this)">
 <div class="form-row">
 <div class="col">
 Username:<br> <input type="text" name="username" class="form-control"><br>
