@@ -58,9 +58,9 @@ if (isset($_POST["id"])&&isset($_POST["del"])) {
         service='$service'
         where id='$id'";
         $result = $conn->query($sql);
-        if($result){echo "String is edite";}
+        if($result){echo "String is edited";}
         else{
-            echo "cant edite";
+            echo "cant edit";
         }
         create_data('admin', $conn);
         
@@ -73,7 +73,7 @@ $sql = "select * from test_t order by name";
 $result = $conn->query($sql);
 if($result ->num_rows > 0) {
     
-echo "<table border=\"1\"><tr><th>ID</th><th>Name</th><th>email</th>
+echo "<table  ><tr><th>ID</th><th>Name</th><th>email</th>
 <th>company</th><th>phone number</th><th>letter</th><th>file name</th><th>service</th></tr>";
     while($row = $result ->fetch_assoc()){
        $str;
@@ -94,7 +94,7 @@ echo "<table border=\"1\"><tr><th>ID</th><th>Name</th><th>email</th>
             <td><input type=\"text\" name=\"letter\" value=". $row["letter"]."></td>
             <td><input type=\"text\" name=\"file_name\" value=". $row["file_name"]."></td>
             <td><input type=\"text\" name=\"service\" value=". $row["service"]."></td>
-            <td><input type=\"submit\" name=\"ed\" value=\"edit\"></td>
+            <td><input type=\"submit\" name=\"ed\" value=\"update\"></td>
             <td><input type=\"submit\" name=\"del\" value=\"delete\"></td>
             </form></tr>";
             echo $str;
@@ -115,9 +115,16 @@ if($role=="admin"){
 }
 
 }
+// You can type different sql queries based on your needs
+// The output as of now does not look good. Your task is to format it properly with HTML tables. 
 
-?>
+$conn->close();
+    ?>
+    </tbody>
+</table>
+<div style="position: absolute; bottom: 0%; width: 100%">
 <?php include '../includes/footer.php';?>
+</div>
 
 
 

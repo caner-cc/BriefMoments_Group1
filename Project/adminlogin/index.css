@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
+	body
+	{
+	  background-image: url("../img/puzzle.jpg");
+	  background-size: 1900px 1080px;
+	  
+	}
+
+
+.footer-copyright.text-center.p {
+	color: #505A6B !important;
+}
 .homepagepicture
 {
 	position: relative;
@@ -11,31 +22,32 @@
 {
 	margin-top: 80px;
 	margin-bottom: 10px;
-	padding: 50px 100px;
-	
+	display: flex;
+	flex-direction: column;
 }
 .butt
 {
+	margin-bottom: 20px;
 	width: 200px;
 }
-.butt2
-{
-	margin-left: 15px;
-}
+
 .textpad
 {
 	padding-top: 20px;
 	
 }
-body
-{
-  background-image: url("../img/puzzle.jpg");
-  background-size: 1900px 1080px;
-  
+
+
+
+img.puzz {
+	width: 100%;
+	height: auto;
+	display: flex;
 }
+
 .whitet
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight:300;
 	font-size: 24px;
@@ -45,7 +57,7 @@ body
 
 .whitet1
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight:300;
 	font-size: 24px;
@@ -55,7 +67,7 @@ body
 }
 .blackt
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight:300;
 	font-size: 24px;
@@ -63,20 +75,11 @@ body
 	color:#505A6B;
 }
 
-h1
-{
-	font-family: Roboto;
-	font-style: normal;
-	font-weight:bold;
-	font-size: 60px;	
-	color:#A4C6EE;
-	padding-bottom: 20px;
-}
 h3
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
-	font-weight:200;
+	font-weight: 200;
 	font-size: 36px;
 	line-height: 15px;
 	color:#A4C6EE;
@@ -84,7 +87,7 @@ h3
 }
 h4
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight:bold;
 	font-size: 36px;	
@@ -92,7 +95,7 @@ h4
 }
 h5
 {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight:normal;
 	font-size: 36px;
@@ -116,11 +119,35 @@ button
     font-size:20px;
     font-family: 'Roboto';
     padding-left: 30px;
-    padding-right: 30px;
+	padding-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
     position: relative;
-    background-color: #A4C6EE !important;
+	background-color: #A4C6EE !important;
+	color:white;
     border: 0px !important;
-    text-align: center;
+	text-align: center;
+}
+
+.btn2 {
+    top: 30%;
+    font-size:20px;
+    font-family: 'Roboto';
+    padding-left: 30px;
+	padding-right: 30px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+    position: relative;
+	background-color: #A4C6EE !important;
+	color:white;
+    border: 0px !important;
+	text-align: center;
+}
+.input {
+	margin-bottom: 10px;
+}
+.btn:hover {
+	color: white;
 }
 button:hover
 {
@@ -136,10 +163,16 @@ transform: translateX(-3px);
 transition: .5s ease;
 }
 
+.navtainer
+{
+    display:flex;
+    background-color: #A4C6EE;
+    width:100%;
+}
+
 .topbar {
-      background-color: #A4C6EE;
+    background-color: #A4C6EE;
     width: 100%; 
-	
 }
 
 .topnav {
@@ -147,44 +180,51 @@ transition: .5s ease;
     overflow: hidden;
     width: 100%;
     padding-right:20px;
-	
-	
 }
 
+/* Style the links inside the navigation bar */
 .topnav-right a {
     float: left;
+    position: relative;
     color: #3A5485;
     text-align: center;
-    padding: 10px 20px 15px 20px;
+    padding:10px 20px 20px 20px;
     text-decoration: none;
     font-size: 15px;
-	border-bottom:solid 3px transparent;
-	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
-	margin-bottom: -8px;
-    
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border-bottom:solid 3px transparent;
+    margin-bottom: -8px;
+
 }
 
+/* Change the color of links on hover */
 .topnav-right a:hover {
     color: white;
     border-bottom: solid 3px white;
 }
 
-.topnav a.active {
-    color: white;
+/* Add a color to the active/current link */
+.topnav-right a.active {
+    color: white !important;
 }
 
+/* Right-aligned section inside the top navigation */
 .topnav-right {
     float: right;
 }
-
-.logo {
-	
-     display: flex;
-    float: left;
-    	
+.topnav #myLinks {
+  display: none;
 }
-
+.topnav-right a.icon {
+  display: block;
+    float: left;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+    width: 110%;
+    height:auto;
+}
 .dropdown-menu {
     background-color: #505A6B !important;
 }
@@ -197,6 +237,20 @@ transition: .5s ease;
     background-color: #505A6B !important;
     color: white !important;
     border-bottom:solid 3px transparent !important;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    padding-top: 5px;
+    max-width: 350px;
+    height: auto;
+}
+
+img {
+    height: auto;
+    width: auto;
+    padding-top: 5px;
 }
 
 .containercontainer
@@ -214,19 +268,30 @@ transition: .5s ease;
 	background-color: #505A6B;
 	padding-top: 40px;
 	padding-bottom: 40px;
-}.navtainer
-{
-	display:flex;
-	background-color: #A4C6EE;
-	width:100%;
 }
-ul
+
+.u
 {
 line-height:200%;
 padding-left: 25px;
 }
 
+h1.display-4 {
+	color: #505A6B !important;
+	font-family: 'Roboto';
+	font-size: 3.5rem;
+	margin-top: -15px;
+	padding-bottom: 10px;
+}
 
+.bottom {
+	position:absolute;
+	bottom: 0%;
+	width: 100%;
+}
+#registerform {
+	padding: 2rem !important; 
+}
 @media (min-width: 767px) and (max-width: 995px)
 {
 	h3
@@ -235,6 +300,7 @@ padding-left: 25px;
 		
 	}		
 }
+
 @media (min-width:576px) and (max-width: 767px)
 {
 	h3
@@ -272,52 +338,37 @@ padding-left: 25px;
 	
 	}
 }
-@media (min-width:0px) and (max-width:576px)
-{
-	.whitet1
-	{
-	padding-bottom: 0px;
-	}
-	.buttons
-	{
-	padding-bottom: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px 0px;
-	margin-left: 18px;
-	}
-	.butt
-	{
-	
-	margin-top: 0px;
-	margin-bottom: 0px;
-	
-	
-	}
-	.butt2
-	{
-	padding-bottom: 5px;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	
-	
-	}
-}
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 805px) {
 	.logo {
 		width: 50%;
 		height: auto;
 		display: flex;
+	  }
 	}
-}
-	  
-@media only screen and (max-width: 400px) {
-	.logo {
+	  @media only screen and (max-width: 400px) {
+		.logo {
 			width: 100%;
 			height: auto;
 			display: flex;
-	}
+		  }
+		}
+
+@media only screen and (max-width: 770px) {
+    img {
+        width: 100%;
+        height: auto;
+
+    }
 }
 
-
+@media only screen and (max-width: 960px) {
+	.buttbox {
+		display: flex;
+		flex-direction: column;
+	}
+	.buttons {
+		display: flex !important;
+		margin-top: 0px;
+	}
+}

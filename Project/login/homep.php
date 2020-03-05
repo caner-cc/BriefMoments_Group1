@@ -27,12 +27,14 @@ include 'loginmenu.php';
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="../index.php?logout='1'" style="color: red;">logout</a> </p>
+		<div class="container" >
+    	<p style="padding-top: 20px; text-align: center">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    	<p style="padding-top: 20px; text-align: center"> <a href="../index.php?logout='1'" style="color: blue;">Log Out</a> </p>
+		</div>
     <?php endif ?>
 </div>
-
+<div style="position: absolute; bottom: 0%; width: 100%">
 <?php include 'loginfooter.php'; ?>
-		
+</div>
 </body>
 </html>

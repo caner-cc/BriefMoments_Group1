@@ -44,7 +44,7 @@ if($_FILES && $_FILES['file1']['error']== UPLOAD_ERR_OK){
 
 }
 
-$sql="insert into test_t (name,email,company, phone, letter, file_name, service, ordernum) values ('$name','$email','$comp_name','$phone','$letter','$filename','$service', '$ordernum')";
+$sql="insert into test_t (name,email,company, phone, letter, file_name, service) values ('$name','$email','$comp_name','$phone','$letter','$filename','$service')";
 $result=$conn->query($sql);
 if($result){echo "Data added!"."<br>";}
 else{echo "Error!".$conn->error."<br>";}

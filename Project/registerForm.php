@@ -38,6 +38,9 @@ h1
 {
 	color:#505A6B;
 }
+.btn {
+    margin-bottom: 20px;
+}
 </style>
 
 <div class="container" id="registerform">
